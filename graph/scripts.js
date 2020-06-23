@@ -249,13 +249,13 @@ var optionsLine = {
     }
   },
   series: [{
-    name: 'Running',
+    name: 'Car',
     data: generateMinuteWiseTimeSeries(new Date("12/12/2016 00:20:00").getTime(), 12, {
       min: 30,
       max: 110
     })
   }, {
-    name: 'Waiting',
+    name: 'House',
     data: generateMinuteWiseTimeSeries(new Date("12/12/2016 00:20:00").getTime(), 12, {
       min: 30,
       max: 110
@@ -328,7 +328,7 @@ var optionsCircle = {
     },
   },
   series: [71, 63],
-  labels: ['Device 1', 'Device 2'],
+  labels: ['Car', 'House'],
   legend: {
     show: true,
     position: 'left',
@@ -377,14 +377,14 @@ var optionsProgress1 = {
     width: 0,
   },
   series: [{
-    name: 'Process 1',
+    name: 'Car',
     data: [44]
   }],
   title: {
     floating: true,
     offsetX: -10,
     offsetY: 5,
-    text: 'Process 1'
+    text: 'Car'
   },
   subtitle: {
     floating: true,
@@ -399,7 +399,7 @@ var optionsProgress1 = {
     enabled: false
   },
   xaxis: {
-    categories: ['Process 1'],
+    categories: ['Car'],
   },
   yaxis: {
     max: 100
@@ -436,14 +436,14 @@ var optionsProgress2 = {
     width: 0,
   },
   series: [{
-    name: 'Process 2',
+    name: 'House',
     data: [80]
   }],
   title: {
     floating: true,
     offsetX: -10,
     offsetY: 5,
-    text: 'Process 2'
+    text: 'House'
   },
   subtitle: {
     floating: true,
@@ -458,7 +458,7 @@ var optionsProgress2 = {
     enabled: false
   },
   xaxis: {
-    categories: ['Process 2'],
+    categories: ['House'],
   },
   yaxis: {
     max: 100
